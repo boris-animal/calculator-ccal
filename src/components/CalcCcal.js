@@ -97,7 +97,7 @@ const CalcCcal = () => {
                 type="radio"
                 className="gender-item__value"
                 id="genderMale"
-                onChange={onChangeGenderValue}
+                onChange={(event) => setGenderValue(event.target.value)}
                 value="male"
                 checked={genderValue === "male" ? true : false}
               />
@@ -110,7 +110,7 @@ const CalcCcal = () => {
                 type="radio"
                 className="gender-item__value"
                 id="genderFemale"
-                onChange={onChangeGenderValue}
+                onChange={(event) => setGenderValue(event.target.value)}
                 value="female"
                 checked={genderValue === "female" ? true : false}
               />
