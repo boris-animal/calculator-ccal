@@ -1,0 +1,65 @@
+html {
+    background-color: black;
+}
+
+p {
+    margin: 0;
+}
+
+.calc-ccal {
+    background-color: black;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    &__title {
+        color: red;
+        font-size: 36px;
+        font-weight: 900;
+        margin: 50px;
+    }
+
+    &__answer {
+        font-size: 24px;
+        margin: 20px 10px 10px 30px;
+    }
+}
+
+.form-input {
+    $root: &;
+
+    display: flex;
+    flex-direction: column;
+    column-fill: balance;
+
+    &__title {
+        padding: 30px 10px 10px 20px;
+    }
+
+    &__control {
+        width: 150px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    &:nth-child(5) {
+        #{$root}__control {
+            width: 260px;
+        }
+    }
+    &__gender-control {
+        margin-left: 5px;
+    }
+}
+
+.ccal-form {
+    &__button {
+        background-color: green;
+        padding: 5px 10px 5px 10px;
+        margin: 10px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+}
+
+
